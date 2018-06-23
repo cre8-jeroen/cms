@@ -35,4 +35,3 @@ try {
     // Do not halt if the plugin is missing
 }
 
-Plugin::load('Migrations');

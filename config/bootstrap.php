@@ -219,3 +219,4 @@ if (Configure::read('debug')) {
 Plugin::load('Backend', ['bootstrap' => false, 'routes' => true]);
 
 Plugin::load('Frontend', ['bootstrap' => false, 'routes' => true]);
+
