@@ -5,7 +5,7 @@ use Cake\Routing\Route\DashedRoute;
 
 Router::plugin(
     'Frontend',
-    ['path' => '/frontend'],
+    ['path' => '/'],
     function (RouteBuilder $routes) {
         $routes->fallbacks(DashedRoute::class);
     }
