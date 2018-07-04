@@ -216,7 +216,7 @@ if (Configure::read('debug')) {
     Plugin::load('DebugKit', ['bootstrap' => true]);
 }
 
-Plugin::load('Backend', ['bootstrap' => false, 'routes' => true]);
+Plugin::load('Backend', ['bootstrap' => false, 'routes' => true, 'autoload' => true]);
 
-Plugin::load('Frontend', ['bootstrap' => false, 'routes' => true]);
+Plugin::load('Frontend', ['bootstrap' => false, 'routes' => true, 'autoload' => true]);
 
