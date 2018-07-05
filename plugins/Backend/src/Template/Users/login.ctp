@@ -34,7 +34,7 @@
 
             <div class="form-group text-center m-t-40">
                 <div class="col-12">
-                    <button class="btn btn-pink btn-block text-uppercase waves-effect waves-light"
+                    <button class="btn btn-default btn-block text-uppercase waves-effect waves-light"
                             type="submit">Inloggen
                     </button>
                 </div>
