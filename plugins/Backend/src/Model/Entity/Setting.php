@@ -1,22 +1,23 @@
 <?php
 namespace Backend\Model\Entity;
 
-use Cake\ORM\Behavior\Translate\TranslateTrait;
 use Cake\ORM\Entity;
 
 /**
- * Node Entity
+ * Setting Entity
  *
  * @property int $id
- * @property string $title
+ * @property string $name
  * @property string $description
- * @property int $public
+ * @property string $type
+ * @property string $default
+ * @property string $value
  * @property \Cake\I18n\FrozenTime $modified
  * @property \Cake\I18n\FrozenTime $created
  */
-class Node extends Entity
+class Setting extends Entity
 {
-    use TranslateTrait;
+
     /**
      * Fields that can be mass assigned using newEntity() or patchEntity().
      *
@@ -27,8 +28,11 @@ class Node extends Entity
      * @var array
      */
     protected $_accessible = [
-        'public' => true,
+        'name' => true,
+        'description' => true,
         'type' => true,
+        'default' => true,
+        'value' => true,
         'modified' => true,
         'created' => true
     ];

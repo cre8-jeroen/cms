@@ -56,12 +56,13 @@
                                 <i class="dripicons-menu"></i>
                             </button>
                         </li>
-                        <li class="hide-phone app-search">
+
+                        <?php /*<li class="hide-phone app-search">
                             <form role="search" class="">
                                 <input type="text" placeholder="Zoeken..." class="form-control">
                                 <a href=""><i class="fa fa-search"></i></a>
                             </form>
-                        </li>
+                        </li>*/ ?>
                     </ul>
 
                 </nav>
@@ -81,6 +82,7 @@
                 <!-- Start content -->
                 <div class="content">
                     <div class="container">
+                        <?= $this->Flash->render() ?>
                         <?= $this->fetch('content'); ?>
                     </div> <!-- container -->
 

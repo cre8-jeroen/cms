@@ -7,7 +7,7 @@ use Cake\ORM\Table;
 use Cake\Validation\Validator;
 
 
-class NodesTable extends Table
+class PagesTable extends Table
 {
 
     public function initialize(array $config)
@@ -17,9 +17,7 @@ class NodesTable extends Table
         $this->setTable('nodes');
         $this->setPrimaryKey('id');
 
-        $this->addBehavior('Translate', ['fields' => ['title']]);
-
-        //$this->hasMany('NodeTranslations');
+        $this->addBehavior('Translate', ['fields' => ['title', 'body']]);
 
         $this->addBehavior('Timestamp');
     }
